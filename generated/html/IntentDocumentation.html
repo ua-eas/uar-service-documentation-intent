@@ -1,0 +1,1210 @@
+<!doctype html>  
+<html> 
+	<head> 
+		<title>Intent Documentation</title>
+	<link href="../css/bootstrap.css" rel="stylesheet">
+	<link href="../css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="../css/toc.css" rel="stylesheet">			
+	<link href="../css/tree.css" rel="stylesheet">		
+	<style>
+	   body {
+	       padding-top: 60px;
+	   }
+    </style>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+
+ 	<div id="topbar" class="navbar navbar-fixed-top" data-dropdown="dropdown">
+  		<div class="navbar-inner">
+       		<div class="container" style="width: auto;">
+	         	 <h3> <a class="brand" href="#"> Intent Documentation </a></h3>
+				 <ul class="nav">
+					<li><a href="#">Text documentation</a></li>
+					<li><a href="#">Models</a></li>
+				 </ul>
+				 <form class="navbar-search pull-left" action="">
+						<input type="text" placeholder="Search" />
+				</form>
+				
+				<ul class="nav pull-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Options <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li id="hidden_table_of_content">
+									<a href="#" onClick="hideToc()">Hide Table Of Contents</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+        	</div>
+  		</div>
+	</div>
+
+<div id="table_of_content" class="sidebar-nav toc" >
+		<div class="summary">				
+					<h3 class="summaryTitle">Table Of Contents</h3>
+					<div id="toc" class="demo">
+						<ul id="menu" >
+								<li id="toc_1">
+									<a href="#" onClick="javascript:window.location = '#1';">
+											Preamble
+										
+									</a>
+									<ul>
+									</ul>
+								</li>
+								<li id="toc_2">
+									<a href="#" onClick="javascript:window.location = '#2';">
+											Project Workbook
+										
+									</a>
+									<ul>
+											<li id="toc_2_1">
+												<a href="#" onClick="javascript:window.location = '#2_1';">
+														Project Summaries
+													
+												</a>
+												<ul>
+												</ul>
+											</li>
+											<li id="toc_2_2">
+												<a href="#" onClick="javascript:window.location = '#2_2';">
+														Project Baseline
+													
+												</a>
+												<ul>
+												</ul>
+											</li>
+											<li id="toc_2_3">
+												<a href="#" onClick="javascript:window.location = '#2_3';">
+														Project Plan
+													
+												</a>
+												<ul>
+												</ul>
+											</li>
+											<li id="toc_2_4">
+												<a href="#" onClick="javascript:window.location = '#2_4';">
+														Staffing Changes
+													
+												</a>
+												<ul>
+												</ul>
+											</li>
+									</ul>
+								</li>
+								<li id="toc_3">
+									<a href="#" onClick="javascript:window.location = '#3';">
+											Service Model
+										
+									</a>
+									<ul>
+											<li id="toc_3_1">
+												<a href="#" onClick="javascript:window.location = '#3_1';">
+														Strategy
+													
+												</a>
+												<ul>
+														<li id="toc_3_1_1">
+															<a href="#" onClick="javascript:window.location = '#3_1_1';">
+																	Processes
+																
+															</a>
+															<ul>
+																	<li id="toc_3_1_1_1">
+																		<a href="#" onClick="javascript:window.location = '#3_1_1_1';">
+																				Portfolio
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+																	<li id="toc_3_1_1_2">
+																		<a href="#" onClick="javascript:window.location = '#3_1_1_2';">
+																				Financial
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+																	<li id="toc_3_1_1_3">
+																		<a href="#" onClick="javascript:window.location = '#3_1_1_3';">
+																				Demand
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+																	<li id="toc_3_1_1_4">
+																		<a href="#" onClick="javascript:window.location = '#3_1_1_4';">
+																				Relationship
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+															</ul>
+														</li>
+														<li id="toc_3_1_2">
+															<a href="#" onClick="javascript:window.location = '#3_1_2';">
+																	Outputs
+																
+															</a>
+															<ul>
+																	<li id="toc_3_1_2_1">
+																		<a href="#" onClick="javascript:window.location = '#3_1_2_1';">
+																				Initiatives
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+																	<li id="toc_3_1_2_2">
+																		<a href="#" onClick="javascript:window.location = '#3_1_2_2';">
+																				Programs
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+																	<li id="toc_3_1_2_3">
+																		<a href="#" onClick="javascript:window.location = '#3_1_2_3';">
+																				Projects
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+																	<li id="toc_3_1_2_4">
+																		<a href="#" onClick="javascript:window.location = '#3_1_2_4';">
+																				Phases
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+															</ul>
+														</li>
+												</ul>
+											</li>
+											<li id="toc_3_2">
+												<a href="#" onClick="javascript:window.location = '#3_2';">
+														Delivery
+													
+												</a>
+												<ul>
+														<li id="toc_3_2_1">
+															<a href="#" onClick="javascript:window.location = '#3_2_1';">
+																	Design
+																
+															</a>
+															<ul>
+																	<li id="toc_3_2_1_1">
+																		<a href="#" onClick="javascript:window.location = '#3_2_1_1';">
+																				Processes
+																			
+																		</a>
+																		<ul>
+																				<li id="toc_3_2_1_1_1">
+																					<a href="#" onClick="javascript:window.location = '#3_2_1_1_1';">
+																							Availability
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_1_1_2">
+																					<a href="#" onClick="javascript:window.location = '#3_2_1_1_2';">
+																							Capacity
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_1_1_3">
+																					<a href="#" onClick="javascript:window.location = '#3_2_1_1_3';">
+																							Security
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_1_1_4">
+																					<a href="#" onClick="javascript:window.location = '#3_2_1_1_4';">
+																							Continuity
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_1_1_5">
+																					<a href="#" onClick="javascript:window.location = '#3_2_1_1_5';">
+																							Functionality
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																		</ul>
+																	</li>
+																	<li id="toc_3_2_1_2">
+																		<a href="#" onClick="javascript:window.location = '#3_2_1_2';">
+																				Outputs
+																			
+																		</a>
+																		<ul>
+																				<li id="toc_3_2_1_2_1">
+																					<a href="#" onClick="javascript:window.location = '#3_2_1_2_1';">
+																							Features
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_1_2_2">
+																					<a href="#" onClick="javascript:window.location = '#3_2_1_2_2';">
+																							Scenarios
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_1_2_3">
+																					<a href="#" onClick="javascript:window.location = '#3_2_1_2_3';">
+																							Tasks
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																		</ul>
+																	</li>
+															</ul>
+														</li>
+														<li id="toc_3_2_2">
+															<a href="#" onClick="javascript:window.location = '#3_2_2';">
+																	Transition
+																
+															</a>
+															<ul>
+																	<li id="toc_3_2_2_1">
+																		<a href="#" onClick="javascript:window.location = '#3_2_2_1';">
+																				Processes
+																			
+																		</a>
+																		<ul>
+																				<li id="toc_3_2_2_1_1">
+																					<a href="#" onClick="javascript:window.location = '#3_2_2_1_1';">
+																							Specification
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_2_1_2">
+																					<a href="#" onClick="javascript:window.location = '#3_2_2_1_2';">
+																							Implementation
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_2_1_3">
+																					<a href="#" onClick="javascript:window.location = '#3_2_2_1_3';">
+																							Verification
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_2_1_4">
+																					<a href="#" onClick="javascript:window.location = '#3_2_2_1_4';">
+																							Acceptance
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																		</ul>
+																	</li>
+																	<li id="toc_3_2_2_2">
+																		<a href="#" onClick="javascript:window.location = '#3_2_2_2';">
+																				Outputs
+																			
+																		</a>
+																		<ul>
+																				<li id="toc_3_2_2_2_1">
+																					<a href="#" onClick="javascript:window.location = '#3_2_2_2_1';">
+																							Releases
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																		</ul>
+																	</li>
+															</ul>
+														</li>
+														<li id="toc_3_2_3">
+															<a href="#" onClick="javascript:window.location = '#3_2_3';">
+																	Operation
+																
+															</a>
+															<ul>
+																	<li id="toc_3_2_3_1">
+																		<a href="#" onClick="javascript:window.location = '#3_2_3_1';">
+																				Processes
+																			
+																		</a>
+																		<ul>
+																				<li id="toc_3_2_3_1_1">
+																					<a href="#" onClick="javascript:window.location = '#3_2_3_1_1';">
+																							Access
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_3_1_2">
+																					<a href="#" onClick="javascript:window.location = '#3_2_3_1_2';">
+																							Dataflow
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_3_1_3">
+																					<a href="#" onClick="javascript:window.location = '#3_2_3_1_3';">
+																							Environment
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_3_1_4">
+																					<a href="#" onClick="javascript:window.location = '#3_2_3_1_4';">
+																							Workflow
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_3_1_5">
+																					<a href="#" onClick="javascript:window.location = '#3_2_3_1_5';">
+																							Release
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																		</ul>
+																	</li>
+																	<li id="toc_3_2_3_2">
+																		<a href="#" onClick="javascript:window.location = '#3_2_3_2';">
+																				Outputs
+																			
+																		</a>
+																		<ul>
+																				<li id="toc_3_2_3_2_1">
+																					<a href="#" onClick="javascript:window.location = '#3_2_3_2_1';">
+																							Incidents
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																				<li id="toc_3_2_3_2_2">
+																					<a href="#" onClick="javascript:window.location = '#3_2_3_2_2';">
+																							Problems
+																						
+																					</a>
+																					<ul>
+																					</ul>
+																				</li>
+																		</ul>
+																	</li>
+															</ul>
+														</li>
+												</ul>
+											</li>
+											<li id="toc_3_3">
+												<a href="#" onClick="javascript:window.location = '#3_3';">
+														Improvement
+													
+												</a>
+												<ul>
+														<li id="toc_3_3_1">
+															<a href="#" onClick="javascript:window.location = '#3_3_1';">
+																	Processes
+																
+															</a>
+															<ul>
+																	<li id="toc_3_3_1_1">
+																		<a href="#" onClick="javascript:window.location = '#3_3_1_1';">
+																				Evaluation
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+																	<li id="toc_3_3_1_2">
+																		<a href="#" onClick="javascript:window.location = '#3_3_1_2';">
+																				Review
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+																	<li id="toc_3_3_1_3">
+																		<a href="#" onClick="javascript:window.location = '#3_3_1_3';">
+																				Development
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+															</ul>
+														</li>
+														<li id="toc_3_3_2">
+															<a href="#" onClick="javascript:window.location = '#3_3_2';">
+																	Outputs
+																
+															</a>
+															<ul>
+																	<li id="toc_3_3_2_1">
+																		<a href="#" onClick="javascript:window.location = '#3_3_2_1';">
+																				Metrics
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+																	<li id="toc_3_3_2_2">
+																		<a href="#" onClick="javascript:window.location = '#3_3_2_2';">
+																				Analyses
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+																	<li id="toc_3_3_2_3">
+																		<a href="#" onClick="javascript:window.location = '#3_3_2_3';">
+																				Actions
+																			
+																		</a>
+																		<ul>
+																		</ul>
+																	</li>
+															</ul>
+														</li>
+												</ul>
+											</li>
+									</ul>
+								</li>
+								<li id="toc_4">
+									<a href="#" onClick="javascript:window.location = '#4';">
+											Afterword
+										
+									</a>
+									<ul>
+									</ul>
+								</li>
+						</ul>
+					</div>
+		</div>
+</div>
+
+<div id="content" >
+			<section id="1">
+				<div class="page-header">
+					<h1>
+							Preamble
+						
+					</h1>		
+				</div>
+			</section>
+			
+			
+						<p>
+								<p>These GitHub-hosted repositories hold canon copies of versioned documentation relevant to the planned upgrade and subsequent sustained operation of the University of Arizona&#8217; s UAccess Research service.  If you have any questions about the contents of this repository, please contact Mike Simpson <mgsimpson@email.arizona.edu>.</p>	<p>There are two repositories: the first (&#8220; uar-service-documentation&#8221; ) contains the actual documentation artifacts (spreadsheets, diagrams, project plans, etc.), and the second (&#8220; uar-service-documentation-intent&#8221; ) contains contextual and explanatory notes that tie all of the individual documentation artifacts together into a (hopefully) cohesive whole.</p>	<p>All of this is managed from inside the Eclipse IDE, which is an admittedly unusual environment to use for either word processing or project management.  But it has a familiar interface, tremendous flexibility and extensibility, and convenient integration with GitHub-based version control.  It also has the Mylyn Intent plugin, which is what ties the two repositories (artifacts and explanation) together, using literate programming principles and techniques established by Donald Knuth at least as early as 1984.</p>	<p>If all of the above sounds overly ambitious and a little unfamiliar, ask Mike to give you the hard sell the next time you have an hour or so for soapboxing.</p>
+						</p>
+			
+			<section id="2">
+				<div class="page-header">
+					<h1>
+							Project Workbook
+						
+					</h1>		
+				</div>
+			</section>
+			
+			
+						<p>
+								<p>Herein find the documents used for primary project management of the upgrade (and intended to establish a framework and habits that will persist into the sustaining mode for the service).</p>
+						</p>
+			
+					<section id="2_1">
+						<h2>	Project Summaries
+						</h2>
+					</section>
+					
+					
+								<p>
+										<p>The original UITS Project Initiation Form was presented to the UITS CIO Project Management Committee on 5/8/2014, and approved at that meeting; a copy of that form is preserved here for future reference:</p>
+								</p>
+					
+								<div  class="mu" id="index">
+									<ul>
+								<li class="jstree-open">
+								
+										(<i>Reference to</i> <code style="color:blue; border:0px solid black;">platform:/resource/uar-service-documentation/Project Workbook/UAR Upgrade Project Initiation Form.docx)</code>
+								</li>
+								
+									</ul>
+								</div>
+								
+					
+								<p>
+										<p>In addition, I created a shortened version of the project information to serve as an &#8220; elevator speech&#8221;  document that we could use to give people a high-level overview of the project deliverables, timeline, etc.:</p>
+								</p>
+					
+								<div  class="mu" id="index">
+									<ul>
+								<li class="jstree-open">
+								
+										(<i>Reference to</i> <code style="color:blue; border:0px solid black;">platform:/resource/uar-service-documentation/Project Workbook/UAR Upgrade Project Overview.docx)</code>
+								</li>
+								
+									</ul>
+								</div>
+								
+					
+			
+					<section id="2_2">
+						<h2>	Project Baseline
+						</h2>
+					</section>
+					
+					
+								<p>
+										<p>I did the original baseline estimation and project planning using an Excel spreadsheet:</p>
+								</p>
+					
+								<div  class="mu" id="index">
+									<ul>
+								<li class="jstree-open">
+								
+										(<i>Reference to</i> <code style="color:blue; border:0px solid black;">platform:/resource/uar-service-documentation/Project Workbook/UAR Upgrade Project Baseline.xlsx)</code>
+								</li>
+								
+									</ul>
+								</div>
+								
+					
+								<p>
+										<p>The planning procedure was as follows:</p>	<ul>
+										 	<li>I roughed out a per-module phased labor estimate (&#8220; Per Module Labor&#8221;  tab), which defines the 20-week delivery cycle needed to deliver a defined subset of functionality from business need to deployed-in-production: think of this as akin to a Scrum-style sprint, that takes a single module through requirements gathering, functional remediation (coding of fixes and/or enhancements), and knowledge management (data modeling and report generation).  For each phase, I estimated FTE labor requirements across six labor categories, from business office to support staff.</li>	
+										 	<li>I proposed five delivery cycles (three to duplicate existing functionality, plus two additional cycles to deploy new modules), and then I played with overlapping the cycles to a greater or lesser extent, watching what happened to the peak FTE counts for any given week of the project, and trying to find a happy medium between how long the project would take and what kind of head count we could reasonably expect to field.</li>	
+										 	<li>I found an overlap that peaked business analysts and software developers at 3.0 FTE each, which fit our staffing constraints, if we were willing to shuffle some labor from UAccess Financials over to Research for the duration of the project.</li>	
+										 	<li>That overlap produced a total of 44 weeks of active development, roughly 10 months on the calendar, with a total commit of 6.6 annualized FTE over that period.</li>	
+										 	<li>All of the above is collated on the &#8220; Project Baseline&#8221;  tab at the front of the spreadsheet.  Also on that tab is a &#8220; Days of Work (DoW)&#8221;  track that shows the intensity of labor per week in terms of how many total FTE days are dedicated in that week.</li>	
+										 	<li>Note also that this baseline shows us completing the third delivery cycle in week 32 of the project; this is the point at which we could cut over production services to the new version, delivering the results of the last two cycles as regular production releases.</li>	
+										 	<li>The &#8220; Labor Commits&#8221;  tab shows the labor commit per week per project role; basically it&#8217; s just another view of how completely any indidividual person is going to be consumed by the project in that week.</li>	
+										 	<li>The &#8220; Modules By Release&#8221;  tab just captures what functionality was delivered in what Kuali Foundation release, based on the release notes that accompanied each one: that information is a little scattered and sometimes contradictory, so I wanted to try and get it all down in one spot for ease of reference.</li>	
+										 	
+										</ul>
+											
+								</p>
+					
+			
+					<section id="2_3">
+						<h2>	Project Plan
+						</h2>
+					</section>
+					
+					
+								<p>
+										<p>Here&#8217; s the official Microsoft Project-format project plan that I created based on data derived from the baseline spreadsheet; I use this mainly to show that we&#8217; ve got service integration work we have to do before we start coding proper, and a stabilization period to follow, so the complete project is really more like fourteen months (although we cut over to production way before the project is done).</p>
+								</p>
+					
+								<div  class="mu" id="index">
+									<ul>
+								<li class="jstree-open">
+								
+										(<i>Reference to</i> <code style="color:blue; border:0px solid black;">platform:/resource/uar-service-documentation/Project Workbook/UAR Upgrade Project Plan.mpp)</code>
+								</li>
+								
+									</ul>
+								</div>
+								
+					
+								<p>
+										<p>If you use MS Project to plan out the dates for the milestones, and you kick off the project on 5/5/2014, you wind up starting the delivery cycles at the beginning of July 2014, cutting over production services in mid-February 2015, and completing service stabilization in July 2015.  Like any planning that&#8217; s done more than a month or two out, take all those dates with a bucket of salt.<br/>I don&#8217; t particularly like MS Project as a tool, and so I expect to replace it with something a little friendlier and cleaner to use before we get too far down the road on the project.</p>
+								</p>
+					
+			
+					<section id="2_4">
+						<h2>	Staffing Changes
+						</h2>
+					</section>
+					
+					
+								<p>
+										<p>To cover the resource commit for this upgrade, we need to do some hiring and some team reorganization.  Here are a set of Visio diagrams demonstrating graphically the organizational changes that we plan on making in order to establish the resource base that we need to do the upgrade:</p>
+								</p>
+					
+								<div  class="mu" id="index">
+									<ul>
+								<li class="jstree-open">
+								
+										(<i>Reference to</i> <code style="color:blue; border:0px solid black;">platform:/resource/uar-service-documentation/Project Workbook/UAR Upgrade Staffing Changes.xlsx)</code>
+								</li>
+								
+									</ul>
+								</div>
+								
+					
+								<p>
+										<p>The individual tabs, going left to right, show the logical progression:</p>	<ul>
+										 	<li>&#8220; Current Structure&#8221;  shows the starting table-of-organization, with business analysts, software developers, and support staff split across UAccess Financials and UAccess Research.</li>	
+										 	<li>On the &#8220; Project Goals&#8221;  tab, I add in the four additional FTE needed on the Research and support teams, based on the baseline planning done earlier (see above).</li>	
+										 	<li>The &#8220; Additional Positions&#8221;  tab shows that we were given two additional head count (one business analyst and one support position) as a permanent increase, leaving two needed positions still unfunded.</li>	
+										 	<li>Next, on the &#8220; Staff Redeployed&#8221;  tab, I show that we&#8217; re going to shift one business analyst (Amy Dougherty) and one developer (Scott Skinner) from Financials work to Research, filling our project goals at the expense of decreasing Financials labor for a year or so.</li>	
+										 	<li>The &#8220; New Structure&#8221;  tab shows the final new table of organization under which we will operate for the duration of the upgrade project, and adds in the recent successful hire of Jessica Peck to fill the open Research business analyst position.</li>	
+										 	<li>The &#8220; Revised New Structure&#8221;  tab represents some last-minute adjustments to allow for hiring pragmatics, and is the team we&#8217; re actually using for the project.</li>	
+										 	<li>Finally, on the &#8220; Project Commit&#8221;  tab, I overlay the estimated project labor on the new team structure, to demonstrate visually how much of our total resources we are commiting to the project.</li>	
+										 	
+										</ul>
+											
+								</p>
+					
+			
+						<p>
+								<p>Note that from reading all of the above, you may infer a certain anti-Microsoft bias, but this is entirely the wrong perspective.  I dislike Microsoft for its anti-competitive business practices; completely unrelatedly, I hate lousy software because it wastes my time and energy. So what I&#8217; m actually implying is that Project and Visio are bad software, all on their own merits, regardless of from whom I&#8217; m licensing them.  On the other hand, I actually like Excel, so there you go.</p>
+						</p>
+			
+			<section id="3">
+				<div class="page-header">
+					<h1>
+							Service Model
+						
+					</h1>		
+				</div>
+			</section>
+			
+			
+						<p>
+								<p>The basic service model is drawn largely from the ITIL 2011 specifications, keeping most of the terms, but simplifying the names, modifying for local usage, and adapting them to be more open source-friendly.  In ITIL, there are five main subdivisions of IT services: strategy, design, transition, operation, and improvement.  For our purposes, we keep those five names, but we group three tightly-related stages (design, transition, and operation) into a supercategory and call it &#8220; delivery&#8221; .</p>
+						</p>
+			
+					<section id="3_1">
+						<h2>	Strategy
+						</h2>
+					</section>
+					
+					
+								<p>
+										<p>The objective of service strategy is to assess strategic business needs, manage the service portfolio (implementing new services, decommissioning old ones), track and anticipate demand for services, and maintain good partner relationships.  The outputs of the service strategy include new initiatives, programs that fall under those initiatives, projects within those programs, and implementation phases within those projects.</p>
+								</p>
+					
+							<section id="3_1_1">
+								<h3>	Processes
+								</h3>
+							</section>
+							
+							
+									<section id="3_1_1_1">
+										<h4>	Portfolio
+										</h4>
+									</section>
+									
+									
+												<p>
+														<p>The purpose of the portfolio process is to initiate, manage, assess, and retire the various initiatives, programs, projects, and services that represent the sum of an organization&#8217; s information technology capabilities.  The promise of the portfolio process is that it will quantify traditionally-informal efforts, enabling measurement and comparative evaluation of the organization&#8217; s activities.</p>
+												</p>
+									
+							
+									<section id="3_1_1_2">
+										<h4>	Financial
+										</h4>
+									</section>
+									
+									
+												<p>
+														<p>The purpose of the financial process is to track, analyze, and balance the costs, quality, and risks associated with delivered services, to inform and enable decisions made about the assets and resources used to provide services.  The promise of the financial process is that it will promote stewardship and detailed accountability for how services are planned, implemented, and delivered.</p>
+												</p>
+									
+							
+									<section id="3_1_1_3">
+										<h4>	Demand
+										</h4>
+									</section>
+									
+									
+												<p>
+														<p>The purpose of the demand process is to manage and forecast current and future demand for the products and services delivered by the organization, and attempt to balance those demands with resource and scheduling constraints.  The promise of the demand process is that it will create a rational, well-informed decision path that converts ideas and opportunities into approved organizational activities.</p>
+												</p>
+									
+							
+									<section id="3_1_1_4">
+										<h4>	Relationship
+										</h4>
+									</section>
+									
+									
+												<p>
+														<p>The purpose of the relationship process is to provide a complete model of current business relationships and their value across time, and to make those relationships explicit and measurable.  The promise of the relationship process is that it will enable stakeholders to develop, evaluate, and leverage the network of relationships within which the organization is embedded.</p>
+												</p>
+									
+							
+					
+							<section id="3_1_2">
+								<h3>	Outputs
+								</h3>
+							</section>
+							
+							
+									<section id="3_1_2_1">
+										<h4>	Initiatives
+										</h4>
+									</section>
+									
+									
+												<p>
+														<p>An initiative represents a long-term organizational focus on a number of related programs and/or projects designed to be of benefit to institutional strategic objectives.  An initiative may have an associated director and/or a steering committee, or similar structure.</p>
+												</p>
+									
+							
+									<section id="3_1_2_2">
+										<h4>	Programs
+										</h4>
+									</section>
+									
+									
+												<p>
+														<p>A program represents a collection of two or more projects and other related activities, all sharing a common goal; an associated program manager will control dependencies and allocate resources across the projects within a program. Programs are designed to deliver outcomes and benefits related to the organization&#8217; s strategic goals.</p>
+												</p>
+									
+							
+									<section id="3_1_2_3">
+										<h4>	Projects
+										</h4>
+									</section>
+									
+									
+												<p>
+														<p>A project represents a temporary organization of resources, applied within a well-defined scope, which will deliver one or more outputs in accordance with a specific business case.  Projects have clear beginning and ending dates, allocated budget, milestones, and deliverables.  Each project will have a project manager responsible for it.</p>
+												</p>
+									
+							
+									<section id="3_1_2_4">
+										<h4>	Phases
+										</h4>
+									</section>
+									
+									
+												<p>
+														<p>Projects will usually be decomposed into individual phases, with each phase associated with specific dates, resources, milestones, and deliverables.  A phase may or may not have an associated phase manager.</p>
+												</p>
+									
+							
+					
+			
+					<section id="3_2">
+						<h2>	Delivery
+						</h2>
+					</section>
+					
+					
+								<p>
+										<p>Once strategy determines demand, direction, and allocates available resources, delivery mechanisms engage to design, build, deploy, and maintain the requisite services and functions.  Delivery is a continuous cycle (or pipeline) of work evolving steadily from business need to deployed functionality.</p>
+								</p>
+					
+							<section id="3_2_1">
+								<h3>	Design
+								</h3>
+							</section>
+							
+							
+										<p>
+												<p>The objective of service design is to ensure that service offerings meet appropriate availability, capacity, and continuity requirements, and can deliver requested functionality in a secure and reliable manner.  The outputs of service design include both architectural/environmental tasks as well as requests for enhancement or fixes to service functionality.</p>
+										</p>
+							
+									<section id="3_2_1_1">
+										<h4>	Processes
+										</h4>
+									</section>
+									
+									
+											<section id="3_2_1_1_1">
+												<h5>	Availability
+												</h5>
+											</section>
+											
+											
+														<p>
+																<p>The purpose of the availability process is to design, monitor, and deliver the agreed-upon amounts of service availability, in terms of reliability, resilence, maintainability and serviceability.  The promise of the availability process is to guarantee that a given service matches or exceeds current and future needs in a cost-effective manner.</p>
+														</p>
+											
+									
+											<section id="3_2_1_1_2">
+												<h5>	Capacity
+												</h5>
+											</section>
+											
+											
+														<p>
+																<p>The purpose of the capacity process is to design, monitor, and deliver the agreed-upon amounts of service capacity, in terms of performance and throughput.  The promise of the capacity process is to supply enough capacity to meet current and future business demands, without requiring that the organization maintain excessive amounts of unused capacity.</p>
+														</p>
+											
+									
+											<section id="3_2_1_1_3">
+												<h5>	Security
+												</h5>
+											</section>
+											
+											
+														<p>
+																<p>The purpose of the security process is to design, monitor, and deliver the agreed-upon amounts of service information security, in terms of confidentiality, integrity, and availability.  The promise of the security process is to guarantee that service data is managed</p>
+														</p>
+											
+									
+											<section id="3_2_1_1_4">
+												<h5>	Continuity
+												</h5>
+											</section>
+											
+											
+														<p>
+																<p>The purpose of the continuity process is to assess risk, evaluate recovery options, and plan and manage actual service recovery in the event of major outages or disasters.  The promise of the continuity process is to maintain service continuity with minimal business impact across a disaster situation.</p>
+														</p>
+											
+									
+											<section id="3_2_1_1_5">
+												<h5>	Functionality
+												</h5>
+											</section>
+											
+											
+														<p>
+																<p>The purpose of the functionality process is to define and manage the agreed-upon business functionality provided by the service.  The promise of the functionality process is to ensure that what is delivered is what is needed, in terms of purpose and function.</p>
+														</p>
+											
+									
+							
+									<section id="3_2_1_2">
+										<h4>	Outputs
+										</h4>
+									</section>
+									
+									
+											<section id="3_2_1_2_1">
+												<h5>	Features
+												</h5>
+											</section>
+											
+											
+									
+											<section id="3_2_1_2_2">
+												<h5>	Scenarios
+												</h5>
+											</section>
+											
+											
+									
+											<section id="3_2_1_2_3">
+												<h5>	Tasks
+												</h5>
+											</section>
+											
+											
+									
+							
+					
+							<section id="3_2_2">
+								<h3>	Transition
+								</h3>
+							</section>
+							
+							
+										<p>
+												<p>The objective of service transition is to evolve the design requirements from expressed business need to production-deployed functionality, through a process of specification, implementation, verification, and acceptance.  The outputs of service transition include bundles of tested features, assembled into a release, and ready to be deployed to production.</p>
+										</p>
+							
+									<section id="3_2_2_1">
+										<h4>	Processes
+										</h4>
+									</section>
+									
+									
+											<section id="3_2_2_1_1">
+												<h5>	Specification
+												</h5>
+											</section>
+											
+											
+									
+											<section id="3_2_2_1_2">
+												<h5>	Implementation
+												</h5>
+											</section>
+											
+											
+									
+											<section id="3_2_2_1_3">
+												<h5>	Verification
+												</h5>
+											</section>
+											
+											
+									
+											<section id="3_2_2_1_4">
+												<h5>	Acceptance
+												</h5>
+											</section>
+											
+											
+									
+							
+									<section id="3_2_2_2">
+										<h4>	Outputs
+										</h4>
+									</section>
+									
+									
+											<section id="3_2_2_2_1">
+												<h5>	Releases
+												</h5>
+											</section>
+											
+											
+									
+							
+					
+							<section id="3_2_3">
+								<h3>	Operation
+								</h3>
+							</section>
+							
+							
+										<p>
+												<p>The objective of service operation is to ensure that services are delivered effectively and efficiently, that problems are identified and fixed, and that routine operational tasks are carried out in an orderly manner.  The outputs of service operation include incident reports and problem analyses.</p>
+										</p>
+							
+									<section id="3_2_3_1">
+										<h4>	Processes
+										</h4>
+									</section>
+									
+									
+											<section id="3_2_3_1_1">
+												<h5>	Access
+												</h5>
+											</section>
+											
+											
+									
+											<section id="3_2_3_1_2">
+												<h5>	Dataflow
+												</h5>
+											</section>
+											
+											
+									
+											<section id="3_2_3_1_3">
+												<h5>	Environment
+												</h5>
+											</section>
+											
+											
+									
+											<section id="3_2_3_1_4">
+												<h5>	Workflow
+												</h5>
+											</section>
+											
+											
+									
+											<section id="3_2_3_1_5">
+												<h5>	Release
+												</h5>
+											</section>
+											
+											
+									
+							
+									<section id="3_2_3_2">
+										<h4>	Outputs
+										</h4>
+									</section>
+									
+									
+											<section id="3_2_3_2_1">
+												<h5>	Incidents
+												</h5>
+											</section>
+											
+											
+									
+											<section id="3_2_3_2_2">
+												<h5>	Problems
+												</h5>
+											</section>
+											
+											
+									
+							
+					
+			
+					<section id="3_3">
+						<h2>	Improvement
+						</h2>
+					</section>
+					
+					
+								<p>
+										<p>The objective of service improvement is to analyze current status and trending, identify opportunities for improvement, plan and implement organizational or process changes, and assess the positive or negative impacts of those changes.  The outputs of service improvement include detailed metrics on current benchmark indicators, analyses of trending and possible improvements to be made, and defined action plans for implementing change.</p>
+								</p>
+					
+							<section id="3_3_1">
+								<h3>	Processes
+								</h3>
+							</section>
+							
+							
+									<section id="3_3_1_1">
+										<h4>	Evaluation
+										</h4>
+									</section>
+									
+									
+							
+									<section id="3_3_1_2">
+										<h4>	Review
+										</h4>
+									</section>
+									
+									
+							
+									<section id="3_3_1_3">
+										<h4>	Development
+										</h4>
+									</section>
+									
+									
+							
+					
+							<section id="3_3_2">
+								<h3>	Outputs
+								</h3>
+							</section>
+							
+							
+									<section id="3_3_2_1">
+										<h4>	Metrics
+										</h4>
+									</section>
+									
+									
+							
+									<section id="3_3_2_2">
+										<h4>	Analyses
+										</h4>
+									</section>
+									
+									
+							
+									<section id="3_3_2_3">
+										<h4>	Actions
+										</h4>
+									</section>
+									
+									
+							
+					
+			
+			<section id="4">
+				<div class="page-header">
+					<h1>
+							Afterword
+						
+					</h1>		
+				</div>
+			</section>
+			
+			
+
+</div>
+
+<script type="text/javascript" src="../scripts/jquery.js"></script>
+<script type="text/javascript" src="../scripts/jquery.jstree.js" ></script>	
+<script type="text/javascript" src="../scripts/bootstrap-twipsy.js"></script>
+<script type="text/javascript" src="../scripts/bootstrap-tooltip.js"></script>
+<script type="text/javascript" src="../scripts/bootstrap-popover.js"></script>
+<script type="text/javascript" src="../scripts/bootstrap-modal.js"></script>
+<script type="text/javascript" src="../scripts/bootstrap-tabs.js"></script>
+<script type="text/javascript" src="../scripts/bootstrap-dropdown.js" ></script>	
+<script type="text/javascript" src="../scripts/prettify.js"></script>
+<script type="text/javascript" src="../scripts/bootstrap-transition.js"></script>
+<script type="text/javascript" src="../scripts/bootstrap-scrollspy.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$("#toc").jstree({ "plugins" : ["themes","html_data","ui"]})
+	});
+</script>
+<script language="javascript"> 
+		var toc = document.getElementById("table_of_content");							
+		var hiddenToc = document.getElementById("hidden_table_of_content");
+		var content = document.getElementById("content");
+		
+		function hideToc() {								
+			toc.style.display = "none";
+			content.style.padding = "0px 0px 0px 50px";
+			hiddenToc.innerHTML = '<a href="#" onClick="revealToc()"><i class="icon-list-alt"/>Show Table Of Contents</a>';
+		}
+		function revealToc() {								
+			toc.style.display = "block";
+			content.style.padding = "0px 0px 0px 350px";								
+			hiddenToc.innerHTML = '<a href="#" onClick="hideToc()"><i class="icon-remove"/>Hide Table Of Contents</a>';
+		}
+		function bindToc(id){
+			var parentId = "#toc_";
+			for (i =5; i<id.length-1; i = i+2){
+				if (i==5) {
+					parentId += id[i];
+				} else {
+				parentId += "." + id[i];
+				}
+				alert(parentId);
+				$.jstree._reference(parentId).open_node(parentId);
+			}
+			$("#toc").jstree("set_focus");
+			$.jstree._focused().select_node(id);
+		}
+	
+	$('html').click(function(e) {
+    	$("a[rel=popover]").popover('hide');
+	});
+	
+	$(function () {
+		$("a[rel=popover]")
+        .popover({
+			animation:true,
+            offset:10,
+            html:true,
+	        trigger:"manual",
+            template:'<div class="popover" onClick="javascript:style.display =\'none\'" onmouseover="$(this).mouseleave(function() {$(this).hide(); });"><div class="arrow"></div><div class="popover-inner"><h3 class="popover-title"></h3><div class="popover-content"><p></p></div></div></div>'
+        })
+		.click(function(e) {
+		   	e.preventDefault();
+        })
+		.mouseenter(function(e) {
+			$("a[rel=popover]").popover('hide');
+            $(this).popover('show');
+        })
+	})
+
+</script>
+</body>	
+</html>
